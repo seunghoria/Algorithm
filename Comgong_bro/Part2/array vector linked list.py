@@ -16,6 +16,15 @@ v.append((789, 987))
 print("size:", len(v))
 for p in v:
 	print(p)
+
+# c++ 
+ vector<pair<int, int> > v;
+v.push_back(make_pair(123, 456));
+v.emplace_back(789, 987);
+printf("size: %d\n", v.size());
+for (auto p : v)
+	printf("%d, %d\n", p.first, p.second);
+ 
 ##파이썬은 list를 쓰면 원래 사이즈가 변경가능하기 때문에 list를 쓰고, 
 ##pair처럼 2개의 값을 저장하기 위해서는 튜플(?)을 사용할 수 있다.
 ##물론, 리스트를 사용할 수도 있는데 여기서는 튜플을 사용해 보았다.
@@ -29,7 +38,9 @@ for p in v:
 # 다른 자료 구조를 구현할 때 연결리스트로 구현하는 경우가 많음
 ## 배열하고 특성 반대
 #=> 삽입삭제가 빠르고 탐색이 오래걸린다. (면접: 배열vs 연결리스트 비교문제)
-#
+
+
+
 # (1) 삽입
 #Linked list
 #  (1) 값 4 담고있는 노드 하나 생성한 다음,
