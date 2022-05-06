@@ -17,7 +17,7 @@ dq = deque()
 dq.append(123)
 dq.appendleft(456)
 dq.appendleft(789)
-print(dq)
+print
 
 print(dq.pop())
 print(dq.popleft())
